@@ -6,3 +6,7 @@ to install this on mac, you can use brew:
   
   <code>brew install node</code>\
   <code>brew install pnpm</code>
+
+Stack:
+Next.js
+Shadnc/ui
