@@ -1,4 +1,4 @@
-import { MenuIcon, MountainIcon } from 'lucide-react';
+import { MenuIcon, Wallet } from 'lucide-react';
 import { ModeToggle } from './ui/mode-toggle';
 import { Button } from './ui/button';
 import {
@@ -15,7 +15,7 @@ export default function Header() {
     <div className="w-screen dark:shadow-none dark:border-b shadow-sm bg-background h-14 py-2 px-2 md:px-16 lg:px-32 flex items-center justify-between">
       <div>
         <Button variant={'link'}>
-          <MountainIcon />
+          <Wallet />
           <span className="hidden">Home</span>
         </Button>
       </div>
