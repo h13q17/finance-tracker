@@ -20,7 +20,7 @@ import { Label } from '@/components/ui/label';
 import { ModeToggle } from '@/components/ui/mode-toggle';
 import { ChromeIcon, GithubIcon } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { MouseEvent, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -163,7 +163,10 @@ export default function Page() {
                   variant={'link'}
                   className="text-muted-foreground"
                   disabled={isLoading}
-                  onClick={() => router.push('/login')}
+                  onClick={(e: MouseEvent<HTMLButtonElement>) => {
+                    e.preventDefault()
+                    router.push('/login');
+                  }}
                 >
                   Don't have an account?
                 </Button>
