@@ -76,7 +76,7 @@ export default function Page() {
                 </Button>
                 <Button variant={'outline'} disabled={isLoading}>
                   <ChromeIcon className="mr-2 w-4 h-4" />
-                  Github
+                  Google
                 </Button>
               </div>
               <div className="relative">
