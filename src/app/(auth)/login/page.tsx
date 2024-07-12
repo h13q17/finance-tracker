@@ -32,7 +32,7 @@ export default function Page() {
   const [submitError, setSubmitError] = useState('');
 
   const form = useForm<z.infer<typeof FormSchema>>({
-    mode: 'onChange',
+    mode: 'onBlur',
     resolver: zodResolver(FormSchema),
     defaultValues: {
       email: '',
