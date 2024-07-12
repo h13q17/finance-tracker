@@ -168,7 +168,7 @@ export default function Page() {
                     router.push('/login');
                   }}
                 >
-                  Don't have an account?
+                  Don&apost have an account?
                 </Button>
               </div>
               {submitError && <FormMessage>{submitError}</FormMessage>}
